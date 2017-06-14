@@ -1,0 +1,321 @@
+.section-masterhead {
+  position: relative;
+  overflow: hidden;
+  background: url('../images/bg-banner.jpg') no-repeat center center;
+  background-color: #fff;
+  max-height: 540px;
+  height: 525px;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    background-color: #000;
+  }
+
+  .masterhead-body-left {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+
+    @media (max-width: 767px) {
+      top: 45%;
+      width: 56%;
+
+      p {
+        display: none;
+      }
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+      top: 50%;
+    }
+  }
+  .masterhead-title {
+    font-size: 50px;
+
+    @media (max-width: 767px) {
+      font-size: 30px;
+    }
+
+    emp {
+      color: #fdd835;
+    }
+  }
+  .masterhead-body-right {
+    position: relative;
+    margin-top: 10%;
+    float: right;
+    color: #fff;
+    padding: 3em;
+
+    @media (max-width: 991px) {
+      padding: 3em 1em;
+    }
+
+    @media (max-width: 767px) {
+      padding: 1em;
+      margin-top: 0;
+    }
+
+    @media (max-width: 600px) {
+      visibility: hidden;
+    }
+
+    &:before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: .15;
+      background-color: #fff;
+      border-radius: 4px;
+    }
+    .styled-form {
+      position: relative;
+      z-index: 1;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+    fieldset {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    .form-control {
+      padding: 20px 12px 10px;
+      min-height: inherit;
+    }
+    .frm_error_style,
+    .frm_error {
+      display: none;
+    }
+  }
+  span {
+    display: block;
+    color: #fdd835;
+
+    &.highlight {
+      padding-top: 10px;
+    }
+    &.highlight2 {
+      font-family: "PoppinsBold", Helvetica, Arial, sans-serif;
+      font-size: 27px;
+    }
+  }
+
+  .page-template-home & {
+    height: 540px;
+  }
+
+  .h1 {
+    margin: 0 0 15px;
+    font-weight: 200;
+    color: #fff;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .btn {
+    margin-top: 23px;
+  }
+
+  .home & {
+    .h1 {
+      text-align: left;
+    }
+
+    .masterhead-intro {
+      padding-top: 20em;
+    }
+
+  }
+
+  @media (max-width: 1199px) {
+    max-height: 720px;
+
+    .h1 {
+      font-size: 45px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    max-height: 580px;
+
+    .h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    height: auto!important;
+    min-height: 0;
+    max-height: 100%!important;
+
+    .h1 {
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+.masterhead-intro {
+  position: relative;
+  z-index: 1;
+  padding-top: 7em;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+
+  @media (min-width: 480px) {
+    padding-top: 8em;
+  }
+  @media (min-width: 768px) {
+    padding-top: 13em;
+  }
+  @media (max-width: 767px) {
+    width: auto;
+    padding-top: 8em;
+    margin-left: 0;
+    padding-top: 7em;
+    padding-bottom: 9em;
+  }
+  @media (min-width: 992px) {
+    padding-top: 25em;
+  }
+  @media (max-width: 1200px) {
+    margin-left: 90px;
+    padding-top: 12em;
+  }
+}
+
+
+.masterhead-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  .page-template-home &,
+  .page-template-contact-page & {
+    background-position: top center;
+  }
+}
+
+.masterhead-img img {
+  width: 100%;
+  height: 100%;
+  background-size: 100% auto !important;
+}
+
+@media (max-width: 1520px) {
+  .masterhead-img img {
+    margin-top: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .masterhead-img {
+    position: absolute;
+  }
+}
+/*@media (max-width: 767px) {
+  .masterhead-img {
+    margin: 59px auto 0;
+  }
+  .masterhead-img img {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+}*/
+@media (max-width: 560px) {
+  .masterhead {
+    height: 300px !important;
+  }
+  .home .masterhead .masterhead-intro {
+    padding-top: 9em;
+  }
+}
+
+.masterhead-accent {
+    position: absolute;
+    top: 0;
+    left: -100%;
+
+    .accent {
+      position: absolute;
+      overflow: hidden;
+      opacity: 0;
+    }
+
+    .accent1 {
+      transition: all 0.75s ease-in-out;
+      -webkit-transition: all 0.75s ease-in-out; /** Chrome & Safari **/
+      -moz-transition: all 0.75s ease-in-out; /** Firefox **/
+      -o-transition: all 0.75s ease-in-out; /** Opera **/
+
+      #top:hover &.move-right {
+          opacity: 1;
+          transform: translate(70%,0);
+          -webkit-transform: translate(70%,0); /** Chrome & Safari **/
+          -o-transform: translate(70%,0); /** Opera **/
+          -moz-transform: translate(70%,0); /** Firefox **/
+      }
+    }
+
+    .accent2 {
+      transition: all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out; /** Chrome & Safari **/
+      -moz-transition: all 1s ease-in-out; /** Firefox **/
+      -o-transition: all 1s ease-in-out; /** Opera **/
+
+      #top:hover &.move-right {
+          opacity: 1;
+          transform: translate(80%,0);
+          -webkit-transform: translate(80%,0); /** Chrome & Safari **/
+          -o-transform: translate(80%,0); /** Opera **/
+          -moz-transform: translate(80%,0); /** Firefox **/
+      }
+    }
+
+    .accent3 {
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out; /** Chrome & Safari **/
+      -moz-transition: all 0.5s ease-in-out; /** Firefox **/
+      -o-transition: all 0.5s ease-in-out; /** Opera **/
+
+      #top:hover &.move-right {
+          opacity: 1;
+          transform: translate(90%,0);
+          -webkit-transform: translate(90%,0); /** Chrome & Safari **/
+          -o-transform: translate(90%,0); /** Opera **/
+          -moz-transform: translate(90%,0); /** Firefox **/
+      }
+    }
+}

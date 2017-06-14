@@ -1,0 +1,141 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic|Raleway:400,600,700);
+@font-face {
+  font-family: 'PoppinsRegular';
+  src: url('../fonts/PoppinsRegular.eot');
+  src: url('../fonts/PoppinsRegular.eot') format('embedded-opentype'),
+  url('../fonts/PoppinsRegular.woff2') format('woff2'),
+  url('../fonts/PoppinsRegular.woff') format('woff'),
+  url('../fonts/PoppinsRegular.ttf') format('truetype'),
+  url('../fonts/PoppinsRegular.svg#PoppinsRegular') format('svg');
+}
+@font-face {
+  font-family: 'PoppinsMedium';
+  src: url('../fonts/PoppinsMedium.eot');
+  src: url('../fonts/PoppinsMedium.eot') format('embedded-opentype'),
+  url('../fonts/PoppinsMedium.woff2') format('woff2'),
+  url('../fonts/PoppinsMedium.woff') format('woff'),
+  url('../fonts/PoppinsMedium.ttf') format('truetype'),
+  url('../fonts/PoppinsMedium.svg#PoppinsMedium') format('svg');
+}
+@font-face {
+  font-family: 'PoppinsSemiBold';
+  src: url('../fonts/PoppinsSemiBold.eot');
+  src: url('../fonts/PoppinsSemiBold.eot') format('embedded-opentype'),
+  url('../fonts/PoppinsSemiBold.woff2') format('woff2'),
+  url('../fonts/PoppinsSemiBold.woff') format('woff'),
+  url('../fonts/PoppinsSemiBold.ttf') format('truetype'),
+  url('../fonts/PoppinsSemiBold.svg#PoppinsSemiBold') format('svg');
+}
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url('../fonts/PoppinsBold.eot');
+  src: url('../fonts/PoppinsBold.eot') format('embedded-opentype'),
+  url('../fonts/PoppinsBold.woff2') format('woff2'),
+  url('../fonts/PoppinsBold.woff') format('woff'),
+  url('../fonts/PoppinsBold.ttf') format('truetype'),
+  url('../fonts/PoppinsBold.svg#PoppinsBold') format('svg');
+}
+@-ms-viewport {
+  width: device-width;
+}
+.clearfix:before,
+.clearfix:after,
+.dl-horizontal dd:before,
+.dl-horizontal dd:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.dl-horizontal dd:after,
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+.affix {
+  position: fixed;
+}
+::selection {
+  background-color: #2E6CAE; // CHANGETHIS
+  color: #fff;
+  text-shadow: none;
+}
+
+/* Mixins */
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
