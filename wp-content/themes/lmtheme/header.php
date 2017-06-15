@@ -19,10 +19,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><img class="img-responsive my3" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-logo-main.png" alt=""></a>
+            <a class="navbar-brand" href="/"><img class="img-responsive my3" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-logo-fitch.png" alt=""></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-            <div class="navbar-holder navbar-right py3">
+            <div class="navbar-holder navbar-right py2">
                 <?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template. ?>
             </div>
         </div>

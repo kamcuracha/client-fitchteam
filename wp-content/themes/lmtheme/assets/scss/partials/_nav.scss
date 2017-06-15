@@ -17,6 +17,26 @@
     position: relative;
     display: block;
 
+    &.icon-tele {
+    
+      &:before {
+        position: relative;
+        top: 4px;
+        left: 10px;
+        display: inline-block;
+        content: '\f095';
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 27px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #00afec;
+      }
+      a {
+        display: inline-block;
+      }
+    }
+
     > a {
       position: relative;
       display: block;
@@ -25,9 +45,10 @@
       padding-top: 14px;
       padding-bottom: 14px;
       text-transform: uppercase;
-      font-family: "PoppinsSemiBold", Helvetica, Arial, sans-serif;
-      font-size: 15px;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      font-size: 16px;
       font-weight: 600;
+      color: #00afec;
       line-height: 11px;
       background-color: transparent!important;
 
@@ -617,7 +638,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border: 0;
   box-shadow: rgba(0, 0, 0, 0.15) 0 1px 1px;
   background-color: #fff;
-  height: 100px;
+  height: 72px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -919,7 +940,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin-left: 0!important;
 
   img {
-    height: 54px !important;
     width: auto;
   }
 }

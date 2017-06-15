@@ -51,7 +51,7 @@ function stargazer_register_styles() {
 	wp_deregister_style( 'mediaelement' );
 	wp_deregister_style( 'wp-mediaelement' );
 
-	wp_enqueue_style( 'font-main', 'https://fonts.googleapis.com/css?family=Roboto:100,300,400' );
+	wp_enqueue_style( 'font-main', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' );
 	wp_register_style( 'theme-mediaelement', trailingslashit( get_template_directory_uri() ) . 'assets/styles/main.css' );
 	
 	if ( is_front_page() ) {
