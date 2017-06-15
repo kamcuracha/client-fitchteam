@@ -40,9 +40,6 @@
         margin-top: 0;
       }
     }
-    .btn-readmore {
-      margin-top: 14px;
-    }
   }
 }
 
@@ -56,4 +53,31 @@
 
 .section-gray {
   background-color: #F3F3F3;
+}
+
+.section {
+  &-brands {
+    background-color: #828282;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      margin: 0 40px 0;
+    }
+  }
+
+  &-feature {
+    background-color: #e8e9ea;
+  }
+
+  &-services {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  &-get-started {
+    background-color: #00afec;
+    color: #fff;
+  }
 }

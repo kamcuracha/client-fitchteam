@@ -3,12 +3,28 @@ jQuery(document).ready(function($) {
         Global: {
             init: function() {
                 this.stickyNav();
+                this.showFeaturette();
             },
             stickyNav: function() {
                 $(window).scroll(function() {
                     clearTimeout($.data(this, "scrollCheck")), $.data(this, "scrollCheck", setTimeout(function() {
                         $(window).scrollTop() > 160 ? $("body").addClass("navbar-shrink").trigger('shrinked') : $("body").removeClass("navbar-shrink").trigger('unshrinked')
                     }, 10))
+                });
+            },
+            showFeaturette: function() {
+                $(".btn-toggler").click(function (event) {
+                    var btnlink = jQuery( this );
+
+                    event.preventDefault();
+                    $(this).toggleClass("collapsed");
+                    $("div.featurette").slideToggle("fast");
+
+                    if (btnlink.hasClass('collapsed')) {
+                        btnlink.text('Read Less');
+                    } else {
+                        btnlink.text('Read More');
+                    }
                 });
             }
         }

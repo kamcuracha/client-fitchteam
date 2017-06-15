@@ -12,7 +12,7 @@ html {
 }
 body {
   margin: 0;
-  padding: 0;
+  padding: 72px 0 0;
   overflow-x: hidden;
   font-weight: 300;
 }
@@ -50,7 +50,8 @@ a {
   background-color: transparent;
 }
 a:active,
-a:hover {
+a:hover,
+a:focus {
   outline: 0;
 }
 abbr[title] {
@@ -1152,10 +1153,10 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #ccc;
 }
 .sr-only {
   position: absolute;

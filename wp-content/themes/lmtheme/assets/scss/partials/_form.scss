@@ -1026,3 +1026,43 @@ select[multiple].form-group-lg .form-control {
     }
   }
 }
+
+#form_fitch-go {
+  fieldset {
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  .frm_form_field {
+    width: 36%;
+    margin: 0;
+    padding-right: 10px;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    input {
+      border: 0!important;
+      height: 51px!important;
+    }
+  }
+  .frm_submit {
+    float: left;
+    clear: none;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  button.frm_button_submit {
+    border: solid 2px #fff;
+    color: #fff;
+    text-transform: uppercase;
+    background: transparent;
+    padding: 13px 50px;
+    margin: 0;
+    width: 100%;
+  }
+}

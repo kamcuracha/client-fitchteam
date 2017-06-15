@@ -1,0 +1,72 @@
+.icon {
+  &-description {
+    display: inline-block;
+    background-image: url(../images/icons/icon-description.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 117px;
+  }
+  &-recruit {
+    display: inline-block;
+    background-image: url(../images/icons/icon-recruit.png);
+    background-repeat: no-repeat;
+    width: 121px;
+    height: 117px;
+  }
+  &-staff {
+    display: inline-block;
+    background-image: url(../images/icons/icon-staff.png);
+    background-repeat: no-repeat;
+    width: 96px;
+    height: 117px;
+  }
+  &-manage {
+    display: inline-block;
+    background-image: url(../images/icons/icon-manage.png);
+    background-repeat: no-repeat;
+    width: 112px;
+    height: 117px;
+  }
+  &-web-design {
+    display: inline-block;
+    background-image: url(../images/icons/icon-web-design.png);
+    background-repeat: no-repeat;
+    width: 89px;
+    height: 103px;
+  }
+  &-graphic-design {
+    display: inline-block;
+    background-image: url(../images/icons/icon-graphic-design.png);
+    background-repeat: no-repeat;
+    width: 94px;
+    height: 103px;
+  }
+  &-web-development {
+    display: inline-block;
+    background-image: url(../images/icons/icon-web-development.png);
+    background-repeat: no-repeat;
+    width: 91px;
+    height: 103px;
+  }
+  &-copy-writing {
+    display: inline-block;
+    background-image: url(../images/icons/icon-copy-writing.png);
+    background-repeat: no-repeat;
+    width: 91px;
+    height: 103px;
+  }
+  &-video-editing {
+    display: inline-block;
+    background-image: url(../images/icons/icon-video-editing.png);
+    background-repeat: no-repeat;
+    width: 97px;
+    height: 103px;
+  }
+  &-social-marketing {
+    display: inline-block;
+    background-image: url(../images/icons/icon-social-marketing.png);
+    background-repeat: no-repeat;
+    width: 102px;
+    height: 103px;
+  }
+}

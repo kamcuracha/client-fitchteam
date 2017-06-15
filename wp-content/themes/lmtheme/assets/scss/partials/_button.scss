@@ -6,100 +6,27 @@
   text-transform: uppercase;
   transition: all 0.2s linear;
   @nclude transition(all .4s linear);
-}
 
-.btn-stroked {
-  position: relative;
-  padding-right: 42px;
-  border: 2px solid #c7c8c7;
-  color: #848484;
-
-  &:hover {
-    border-color: #737373;
-    color: #737373;
-  }
-  .icon {
-    position: absolute;
-    top: 6px;
-    right: 12px;
-    font-size: 30px;
+  &:hover,
+  &:focus {
+    text-decoration: none;
   }
 }
 
-.btn-badge {
-  display: inline-block;
-  background-color: #6faf57;
-  border: 1px solid #6faf57;
-  border-radius: 4px;
-  font-weight: bold;
+.btn-default {
+  background-color: #00afec;
+  color: #fff;
 
-  &:before {
-    position: relative;
-    top: 4px;
-    left: 10px;
-    display: inline-block;
-    content: '\f10b';
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: 27px;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  &:hover,
+  &:focus {
+    background-color: #006aec;
     color: #fff;
   }
-  a {
-    display: inline-block !important;
-    color: #fff !important;
-  }
-}
 
-.btn-white {
-  background-color: #fff;
-  color: #494949;
-
-  &-v2 {
+  &.collapsed {
     background-color: #fff;
-    color: #6faf57;
-
-    &:hover {
-      color: #6faf57;
-    }
+    color: #00afec;
   }
-  &-v2ext:after {
-    position: relative;
-    top: 1px;
-    left: 7px;
-    display: inline-block;
-    content: '\f138';
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: 18px;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #6faf57;
-  }
-}
-
-.btn-green {
-  background-color: #6faf57;
-  color: #fff !important;
-
-  &:hover {
-    background-color: #52b250;
-    color: #fff;
-  }
-}
-
-.btn-block {
-  width: 100%;
-  text-align: center;
-}
-
-.btn-lg {
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 16px;
 }
 
 .btn-xlg {
@@ -110,30 +37,15 @@
   font-size: 24px;
 }
 
+.btn-lg {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+}
+
 .btn-sm {
   padding: 10px 20px;
   font-size: 13px;
-}
-
-.btn-actions {
-  @include clearfix();
-
-  .btn{
-    @media(max-width: 768px){
-      display: block;
-      margin-bottom: 10px;
-    }
-  }
-  .pull-right{
-    @media(max-width: 768px){
-      float: none !important;
-      margin-top: 10px;
-    }
-    .btn {
-      @media(max-width: 768px){
-        display: block;
-        margin-bottom: 10px;
-      }
-    }
-  }
 }
