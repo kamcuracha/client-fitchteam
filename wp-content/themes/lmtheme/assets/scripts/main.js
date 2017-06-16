@@ -4,6 +4,7 @@ jQuery(document).ready(function($) {
             init: function() {
                 this.stickyNav();
                 this.showFeaturette();
+                this.targetBlank();
             },
             stickyNav: function() {
                 $(window).scroll(function() {
@@ -26,6 +27,9 @@ jQuery(document).ready(function($) {
                         btnlink.text('Read More');
                     }
                 });
+            },
+            targetBlank: function() {
+                $(".target-blank a").attr("target", "_blank");
             }
         }
     };

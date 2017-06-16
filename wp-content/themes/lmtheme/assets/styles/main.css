@@ -6477,6 +6477,59 @@ table th[class*="col-"] {
   }
 }
 
+footer {
+  color: #777;
+}
+
+footer.section-prefooter {
+  background-color: #2d3033;
+}
+
+footer.section-prefooter h4 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+footer.section-prefooter p {
+  font-size: 15px;
+}
+
+footer.section-footer {
+  border-top: solid 1px #555;
+  text-transform: uppercase;
+  background-color: #2d3033;
+}
+
+footer.section-footer .fa-stack {
+  color: #00afec;
+}
+
+footer.section-footer .fa-stack-1x {
+  color: #fff;
+}
+
+footer .footer-copy {
+  font-size: 15px;
+}
+
+footer .footer-social {
+  margin-top: -7px;
+}
+
+.menu-footer-menu-container {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+#menu-footer-menu li {
+  float: left;
+  padding-right: 36px;
+}
+
+#menu-footer-menu a {
+  color: #006aec;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   position: relative;
