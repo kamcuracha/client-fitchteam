@@ -1,6 +1,6 @@
 .rating {
   .star {
-    font-size: 24px;
+    font-size: 18px;
     display: inline-block;
     color: #e3e3e3;
   }
@@ -11,14 +11,14 @@
     content:'\2605';
   }
   .star.full {
-    color: #6faf57;
+    color: #00afec;
   }
   .star.half:after {
     content: '\2605';
-    color: #6faf57;
+    color: #00afec;
     position: absolute;
-    margin-left: -20px;
-    width: 10px;
+    margin-left: -15px;
+    width: 8px;
     overflow: hidden;
   }
 }
@@ -55,6 +55,85 @@ blockquote {
 .featurette {
   display: none;
   padding-top: 36px;
+}
+
+.owl-carousel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.owl-carousel .owl-stage-outer,
+.owl-carousel .owl-stage,
+.owl-carousel .owl-item,
+.owl-carousel .owl-slide {
+  height: 100%;
+  color: #fff;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 21px;
+  }
+}
+
+.owl-carousel .owl-item,
+.owl-carousel .owl-slide {
+  overflow: hidden;
+  min-height: 360px;
+  height: 600px;
+}
+
+.owl-dots{position:absolute;left:100px;right:0;bottom:15px;}
+.owl-dot{display:inline-block;padding:5px}
+.owl-dot span{display:block;width:10px;height:10px;background-color:#fff;border-radius:50%}
+.owl-dot.active span{background-color:#00afec;}
+.owl-dots.disabled,.owl-nav.disabled{display:none}
+
+.styled-conversion {
+  position: absolute;
+  top: 30px;
+  right: 8%;
+  z-index: 1;
+  background-color: #32353b;
+  color: #fff;
+  border-radius: 4px;
+  padding: 2em 3em 1.2em;
+  max-width: 409px;
+  width: 46%;
+
+  button.frm_button_submit {
+    padding: 18px 40px;
+    width: 100%;
+    background-color: #00afec;
+    border: 0;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    outline: none!important;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  input,
+  textarea {
+    padding: 0 10px;
+    border: 0!important;
+    padding-top: 18px;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 10px!important;
+  }
 }
 
 .fade {

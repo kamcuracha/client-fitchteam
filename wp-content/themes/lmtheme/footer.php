@@ -5,7 +5,7 @@
                 <div class="col-sm-4">
                     <div class="row">
                         <div class="col-sm-5">
-                            <h4 class="mt0 pb4"><?php the_sub_field('country'); ?></h4>
+                            <h4 class="mt0 pb2"><?php the_sub_field('country'); ?></h4>
                         </div>
                         <div class="col-sm-7">
                             <p><?php the_sub_field('full_address'); ?></p>

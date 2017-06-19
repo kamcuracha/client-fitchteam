@@ -76,6 +76,71 @@
     }
   }
 
+  &-reviews {
+    background: url(../images/img-bg-testimonails.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+
+    h2 {
+      font-size: 45px;
+    }
+    label {
+      margin-right: 8px;
+      font-size: 16px;
+    }
+    .rating {
+      display: inline;
+      vertical-align: baseline;
+    }
+    .fitch-review-item {
+      border-top: 1px solid rgba(255, 255, 255, 0.13);
+      padding: 18px 0;
+
+      &:first-child {
+        border-top: none;
+      }
+    }
+    .fitch-review-copy {
+      font-size: 14px;
+      font-weight: 100;
+      opacity: .8;
+    }
+  }
+
+  &-best-field {
+    .best-field-bg {
+      background: url(../images/img-bg-best-field.jpg) no-repeat center center;
+      min-height: 456px;
+
+      .leaders-holder {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    .best-field-content {
+      padding: 3em 5em;
+
+      h2 {
+        font-size: 45px;
+      }
+    }
+  }
+
+  &-location {
+    background: url(../images/img-bg-manila.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 300px;
+
+    .location-holder {
+      position: absolute;
+      bottom: 16px;
+      right: 70px;
+      font-size: 21px;
+      font-weight: 700;
+      color: #d5d5d5;
+    }
+  }
+
   &-get-started {
     background-color: #00afec;
     color: #fff;

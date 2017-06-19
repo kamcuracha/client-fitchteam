@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
                 this.stickyNav();
                 this.showFeaturette();
                 this.targetBlank();
+                this.bannerCarousel();
             },
             stickyNav: function() {
                 $(window).scroll(function() {
@@ -30,6 +31,23 @@ jQuery(document).ready(function($) {
             },
             targetBlank: function() {
                 $(".target-blank a").attr("target", "_blank");
+            },
+            bannerCarousel: function() {
+                $(".owl-carousel").owlCarousel({
+                    items: 1,
+                    pullDrag: false,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 7000,
+                    animateOut: 'fadeOut',
+                    responsiveRefreshRate: 0,
+                    onInitialized: function(event) {
+                        centerSlideImages(event);
+                    },
+                    onResized: function(event) {
+                        centerSlideImages(event);
+                    },
+                });
             }
         }
     };

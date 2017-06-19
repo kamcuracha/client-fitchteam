@@ -5,6 +5,34 @@
 
 get_header(); // Loads the header.php template. ?>
 
+<?php if( have_rows('banner', 'option') ): ?>
+    <section class="section section-banner">
+        <div class="owl-carousel">
+            <?php while( have_rows('banner', 'option') ): the_row(); ?>
+                <div class="owl-slide" style="background-image: url('<?php the_sub_field('image'); ?>')">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <h1><?php the_sub_field('heading'); ?></h1>
+                                <p><?php the_sub_field('body'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endwhile; ?>
+        </div>
+        <div class="container">
+            <?php if(get_field('quote_form')) : ?>
+            <div class="styled-conversion">
+                <h2><?php echo get_field('quote_heading'); ?></h2>
+                <?php echo (get_field('quote_body')) ? '<p>'.get_field('quote_body').'</p>' : ''; ?>
+                <?php echo do_shortcode(get_field('quote_form')); ?>
+            </div>
+            <?php endif; ?>
+        </div>
+    </section>
+<?php endif; ?>
+
 <?php if(have_rows('brands')) : $rowctr = 1; ?>
     <section class="section section-brands">
         <div class="container">
@@ -59,7 +87,7 @@ get_header(); // Loads the header.php template. ?>
 
 <?php if(get_field('services_heading')) : ?>
     <section class="section section-services">
-        <div class="container pt4 pb2">
+        <div class="container py4">
             <div class="section-heading">
                 <h2><?php echo get_field('services_heading'); ?></h2>
             </div>
@@ -79,6 +107,74 @@ get_header(); // Loads the header.php template. ?>
         </div>
     </section>
 <?php endif; ?>
+
+<?php if(get_field('review_heading')) : ?>
+    <section class="section section-reviews">
+        <div class="container">
+            <div class="row py4">
+                <div class="col-sm-6">
+                    <h2 class="pb3"><?php echo get_field('review_heading'); ?></h2>
+                    <a href="#" target="_self" class="btn btn-default">Contact Us</a>
+                </div>
+                <?php query_posts('post_type=review&post_status=publish&posts_per_page=3'); ?>
+                <?php if(have_posts()) : ?>
+                    <div class="col-sm-6">
+                        <?php while (have_posts()) : the_post(); ?>
+                            <div class="fitch-review-item">
+                                <div class="fitch-rating">
+                                    <label for=""><?php the_title(); ?></label>
+                                    <?php $stars = explode( ',', get_field('stars')); ?>
+                                    <div class="rating">
+                                        <?php
+                                        $length = count($stars);
+                                        for ($i = 0; $i < $length; $i++) {
+                                            echo '<span class="star '.$stars[$i].'"></span>';
+                                        }
+                                        ?>
+                                    </div>
+                                </div>
+                                <div class="fitch-review-copy">
+                                    <?php echo get_the_content(); ?>
+                                </div>
+                                <?php if ($wp_query->current_post +1 != $wp_query->post_count) : ?>
+                                <?php endif; ?>
+                            </div>
+                        <?php endwhile; ?>
+                    </div>
+                <?php endif; wp_reset_query();?>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
+
+<?php if(get_field('best_field_heading')) : ?>
+    <section class="section section-best-field">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 best-field-bg">
+                    <div class="leaders-holder">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-leaders-fitch.png" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 best-field-content">
+                    <h2 class="mb3"><?php echo get_field('best_field_heading'); ?></h2>
+                    <p><?php echo get_field('best_field_body'); ?></p>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
+
+<?php if(get_field('location')) : ?>
+    <section class="section section-location">
+        <div class="container py4">
+            <div class="location-holder py2 pull-right">
+                <?php echo get_field('location'); ?>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
+
 
 <?php if(get_field('get_started_form')) : ?>
     <section class="section section-get-started">
