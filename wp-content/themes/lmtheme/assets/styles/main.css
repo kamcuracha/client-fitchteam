@@ -3859,29 +3859,6 @@ blockquote:after {
   width: 46%;
 }
 
-.styled-conversion button.frm_button_submit {
-  padding: 18px 40px;
-  width: 100%;
-  background-color: #00afec;
-  border: 0;
-  color: #fff !important;
-  text-transform: uppercase;
-  text-decoration: none !important;
-  outline: none !important;
-  box-shadow: none;
-  margin: 0;
-}
-
-.styled-conversion input,
-.styled-conversion textarea {
-  padding: 0 10px;
-  border: 0 !important;
-  padding-top: 18px;
-  font-weight: 600;
-  font-size: 14px;
-  padding-left: 10px !important;
-}
-
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -5136,6 +5113,51 @@ select[multiple].form-group-lg .form-control {
   padding: 13px 50px;
   margin: 0;
   width: 100%;
+}
+
+#form_fitch-quote button.frm_button_submit {
+  padding: 18px 40px;
+  width: 100%;
+  background-color: #00afec;
+  border: 0;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none;
+  margin: 0;
+}
+
+#form_fitch-quote input,
+#form_fitch-quote textarea {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0 10px;
+  border: 0 !important;
+  padding-top: 18px;
+  font-weight: 600;
+  font-size: 14px;
+  padding-left: 10px !important;
+}
+
+#form_fitch-quote .form-field {
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+#form_fitch-quote .form-field input {
+  border: 0 !important;
+  height: 51px !important;
+}
+
+#form_fitch-quote label {
+  position: absolute;
+  display: block;
+  margin-top: 8px;
+  margin-left: 10px;
+  color: #00afec;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1;
 }
 
 .icon-description {

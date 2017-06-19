@@ -111,29 +111,6 @@ blockquote {
   padding: 2em 3em 1.2em;
   max-width: 409px;
   width: 46%;
-
-  button.frm_button_submit {
-    padding: 18px 40px;
-    width: 100%;
-    background-color: #00afec;
-    border: 0;
-    color: #fff !important;
-    text-transform: uppercase;
-    text-decoration: none !important;
-    outline: none!important;
-    box-shadow: none;
-    margin: 0;
-  }
-
-  input,
-  textarea {
-    padding: 0 10px;
-    border: 0!important;
-    padding-top: 18px;
-    font-weight: 600;
-    font-size: 14px;
-    padding-left: 10px!important;
-  }
 }
 
 .fade {
