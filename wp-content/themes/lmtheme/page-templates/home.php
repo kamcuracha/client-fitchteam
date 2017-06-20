@@ -52,8 +52,8 @@ get_header(); // Loads the header.php template. ?>
                 <h2><?php echo get_field('feature_heading'); ?></h2>
                 <p><?php echo get_field('feature_body'); ?></p>
                 <?php if(get_field('feature_link')) : ?>
-                    <a class="btn btn-default btn-toggler" href="#" target="_self"><?php echo get_field('feature_link'); ?></a>
                     <?php echo (get_field('featurette')) ? '<div class="featurette">'.get_field('featurette').'</div>': ''; ?>
+                    <a class="btn btn-default btn-toggler" href="#" target="_self"><?php echo get_field('feature_link'); ?></a>
                 <?php endif; ?>
             </div>
         </div>

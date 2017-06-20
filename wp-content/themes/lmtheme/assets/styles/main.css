@@ -3795,6 +3795,7 @@ blockquote:after {
   -webkit-box-pack: center;
   justify-content: center;
   height: 100%;
+  margin-top: 8em;
 }
 
 .owl-carousel .owl-stage-outer h1,
@@ -3857,6 +3858,19 @@ blockquote:after {
   padding: 2em 3em 1.2em;
   max-width: 409px;
   width: 46%;
+}
+
+@media (max-width: 1000px) {
+  .styled-conversion {
+    float: none;
+    margin: auto;
+    width: auto;
+    margin-top: 28px;
+  }
+}
+
+.styled-conversion h2 {
+  margin: 0 0 6px;
 }
 
 .fade {
